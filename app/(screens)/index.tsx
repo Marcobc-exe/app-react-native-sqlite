@@ -5,27 +5,34 @@ import { useEffect } from "react";
 import { SafeAreaView } from "react-native";
 
 export default function Home() {
-  const { getUser, updateUser } = useQueriesUsers()
-  const handleConnection = async () => {
-    // const db = await openDatabaseAsync("dbTesting.db");
-    // await db.runAsync("INSERT INTO users (name, password) VALUES (?,?)", "Marco", "qwerty123")
-    // await db.runAsync(`
-    //   INSERT INTO farms (ownerId, razonSocial, farmName)
-    //   VALUES (?,?,?)
-    //   `,
-    //   1, "Iansa", "Finca Don Felipe"
-    // )
-    // const users = await updateUser(1, "Pedro", "123456")
-    // console.log(users)
-    // const farms = await db.getAllAsync(
-    //   "SELECT * FROM farms WHERE id=?",
-    //   users.id
-    // );
-    // console.log(farms);
+  const { getUser, updateUser, createUser, deleteUser, dropUserTable } = useQueriesUsers();
 
-    // await db.runAsync("DELETE FROM users WHERE id=3")
-    // await db.runAsync("DROP TABLE IF EXISTS users")
-    // await db.runAsync("DROP TABLE IF EXISTS farms")
+  const handleConnection = async () => {
+    // const response = await dropUserTable()
+    // console.log(response)
+
+    // const response = await deleteUser(82)
+    // console.log(response)
+
+    // const listUsers = await getUser()
+    // console.log(listUsers)
+    
+    // const body = {
+    //   name: "Marco Bravo",
+    //   password: "panconjamon",
+    //   active: 1,
+    // };
+    // const response = await createUser(body);
+    // console.log(response);
+
+    // const body = {
+    //   id: 82,
+    //   name: "Santa Isabel",
+    //   password: "asdfasf",
+    //   active: 0,
+    // };
+    // const users = await updateUser(body);
+    // console.log(users);
   };
 
   useEffect(() => {

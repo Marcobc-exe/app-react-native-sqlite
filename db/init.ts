@@ -5,7 +5,8 @@ export const initCreateTables = async (db: SQLiteDatabase) => {
     `CREATE TABLE IF NOT EXISTS users (
       id INTEGER PRIMARY KEY UNIQUE NOT NULL, 
       name TEXT NOT NULL,
-      password TEXT NOT NULL
+      password TEXT NOT NULL,
+      active INTEGER NOT NULL
     )`
   );
 
