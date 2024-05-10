@@ -1,6 +1,18 @@
-# How to use expo-sqlite 14
+# How to use expo-sqlite 14!
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Content:
+- Setting and Implement SQLite
+- Creation of Tables from Provider
+- Custom Hook to handle queries (CRUD)
+
+## Dependencies:
+- "expo": "~51.0.2",
+- "expo-sqlite": "^14.0.3",
+- "expo-router": "~3.5.11",
+- "react": "18.2.0",
+- "react-dom": "18.2.0",
+- "react-native": "0.74.1",
+- "typescript": "~5.3.3",
 
 ## Get started
 
